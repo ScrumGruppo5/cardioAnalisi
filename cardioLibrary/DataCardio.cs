@@ -4,15 +4,16 @@ namespace cardioLibrary
 {
     public class DataCardio
     {
-        public static double Frequenzabattito(int n)
+        public static int Frequenzabattito(int età)
         {
-            double f = 220 - n;
+            int f = 220 - età;
             return f;
         }
         public static bool FrequenzaConsigliata(int f)
         {
-            double p = (f * 100) / 220;
-            if (p > 70 && p < 90)
+            double min = (f * 70) / 100;
+            double max = (f * 90) / 100;
+            if (f > min && f < max)
             {
                 return true;
             }
@@ -35,21 +36,25 @@ namespace cardioLibrary
         public static double CalorieBruciate(string sesso, int età, double frequenza, double peso, double durata)
         {
             double c;
-            if (sesso == "uomo" || sesso == "Uomo")
-            {
-                c = ((età * 0.2017) + (peso * 0.199) + (frequenza * 0.6309) - 55.0969) * durata / 4.184;
-            }
-            else if (sesso == "Donna" || sesso == "donna")
-            {
+            if (sesso.ToLower() == "uomo")
+                c = ((età * 0.2017) + (peso * 0.199) + (frequenza * 0.6309) - 55.0969) * durata /4.184;
+            else if (sesso.ToLower() == "donna")
                 c = ((età * 0.074) - (peso * 0.126) + (frequenza * 0.4472) - 20.4022) * durata / 4.184;
+            else
+            {
+                return 1;
             }
+            c = Math.Round(c, 2);
+            return c;
+        }
+        public static double SpesaEnergetica(string tipo, double km, double peso)
+        {
+            if (tipo.ToLower() == "corsa")
+                return 0.9 * km * peso;
+            else if (tipo.ToLower() == "camminata")
+                return 0.50 * km * peso;
             else
                 return 1;
-            return c;
-
-
-
-
         }
     }
 }
