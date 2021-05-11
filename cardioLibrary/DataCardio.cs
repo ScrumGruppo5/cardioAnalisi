@@ -4,13 +4,9 @@ namespace cardioLibrary
 {
     public class DataCardio
     {
-        public static int Frequenzabattito(int età)
+        public static bool FrequenzaConsigliata(int età)
         {
             int f = 220 - età;
-            return f;
-        }
-        public static bool FrequenzaConsigliata(int f)
-        {
             double min = (f * 70) / 100;
             double max = (f * 90) / 100;
             if (f > min && f < max)
@@ -33,11 +29,11 @@ namespace cardioLibrary
                     return "Tachicardia";
             }
         }
-        public static double CalorieBruciate(string sesso, int età, double frequenza, double peso, double durata)
+        public static double CalorieBruciate(string sesso, int età, double peso, double durata, double frequenza)
         {
             double c;
             if (sesso.ToLower() == "uomo")
-                c = ((età * 0.2017) + (peso * 0.199) + (frequenza * 0.6309) - 55.0969) * durata /4.184;
+                c = ((età * 0.2017) + (peso * 0.199) + (frequenza * 0.6309) - 55.0969) * durata / 4.184;
             else if (sesso.ToLower() == "donna")
                 c = ((età * 0.074) - (peso * 0.126) + (frequenza * 0.4472) - 20.4022) * durata / 4.184;
             else
