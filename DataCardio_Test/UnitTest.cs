@@ -9,13 +9,11 @@ namespace DataCardio_Test
 
 
         [DataTestMethod]
-        [DataRow(20, false)]
-        [DataRow(30, false)]
-        [DataRow(35, false)]
-        [DataRow(55, false)]
-        public void TestMethod2(int frequenza, bool valoreAspettato)
+        [DataRow(20,"battiti minimi: 140 battiti massimi: 180" )]
+        
+        public void TestMethod2(int età, string valoreAspettato)
         {
-            bool prova = DataCardio.FrequenzaConsigliata(frequenza);
+            string prova = DataCardio.FrequenzaConsigliata(età);
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]
@@ -41,6 +39,13 @@ namespace DataCardio_Test
         public void TestMethod5(string tipo, double km, double peso, double valoreAspettato)
         {
             double prova = DataCardio.SpesaEnergetica(tipo, km, peso);
+            Assert.AreEqual(valoreAspettato, prova);
+        }
+        [DataTestMethod]
+        [DataRow("dati.txt", 58.01)]
+        public void TestMethod6(string file, double valoreAspettato)
+        {
+            double prova = DataCardio.MediaBattiti(file);
             Assert.AreEqual(valoreAspettato, prova);
         }
     }

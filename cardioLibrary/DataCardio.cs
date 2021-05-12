@@ -1,20 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace cardioLibrary
 {
     public class DataCardio
     {
-        public static bool FrequenzaConsigliata(int età)
+        public static string FrequenzaConsigliata(int età)
         {
             int f = 220 - età;
             double min = (f * 70) / 100;
             double max = (f * 90) / 100;
-            if (f > min && f < max)
-            {
-                return true;
-            }
-            else
-                return false;
+            string risultato = ($"battiti minimi: {min} battiti massimi: {max}");
+            return risultato;
         }
         public static string FrequenzaCardiaca(int battiti)
         {
@@ -51,6 +49,24 @@ namespace cardioLibrary
                 return 0.50 * km * peso;
             else
                 return 1;
+        }
+
+        public static double MediaBattiti(string file)
+        {
+            double somma = 0, tot;
+            using (StreamReader r = new StreamReader(file))
+            {
+                string line;
+                while ((line = r.ReadLine()) != null)
+                {
+                    Int32.TryParse(line, out int n);
+                    somma += n;
+                }
+                tot = somma / 1440;
+                tot = Math.Round(tot, 2);
+            }
+            return tot;
+
         }
     }
 }
