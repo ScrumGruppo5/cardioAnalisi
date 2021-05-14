@@ -27,9 +27,16 @@ namespace DataCardio_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SchedaCliente window2 = new SchedaCliente();
-            window2.Show();
-            Close();
+            if (txtNome.Text == "" || txtCognome.Text == "" )
+            {
+                MessageBox.Show("Compilare Tutti i Campi", "ATTENZIONE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                SchedaCliente window2 = new SchedaCliente();
+                window2.Show();
+                Close();
+            }
         }
     }
 }
