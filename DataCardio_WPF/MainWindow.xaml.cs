@@ -18,25 +18,31 @@ namespace DataCardio_WPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
+        string nome;
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (txtNome.Text == "" || txtCognome.Text == "" )
+            if (txtNome.Text == "" || txtCognome.Text == "")
             {
                 MessageBox.Show("Compilare Tutti i Campi", "ATTENZIONE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
             else
             {
-                SchedaCliente window2 = new SchedaCliente();
+                SchedaCliente window2 = new SchedaCliente(txtNome.Text);
                 window2.Show();
                 Close();
+                nome = txtNome.Text;
+                
             }
         }
+        
     }
 }

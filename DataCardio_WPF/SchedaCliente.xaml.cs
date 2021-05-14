@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace DataCardio_WPF
 {
     /// <summary>
@@ -17,9 +18,10 @@ namespace DataCardio_WPF
     /// </summary>
     public partial class SchedaCliente : Window
     {
-        public SchedaCliente()
+        public SchedaCliente(string nome)
         {
             InitializeComponent();
+            lblNome.Content = nome;
         }
     }
 }
