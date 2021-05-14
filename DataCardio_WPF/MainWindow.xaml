@@ -1,0 +1,15 @@
+﻿<Window x:Class="DataCardio_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataCardio_WPF"
+        mc:Ignorable="d"
+        Title="CardioFit" Height="450" Width="710" Icon="/unnamed.gif">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="143" VerticalAlignment="Top" Width="269" Source="/unnamed.gif" Margin="236,-12,0,0" />
+        <Label Content="Compila la tua scheda" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top"/>
+        <Button Content="Calcola Dati" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="48" Width="146" Click="Button_Click"/>
+
+    </Grid>
+</Window>
