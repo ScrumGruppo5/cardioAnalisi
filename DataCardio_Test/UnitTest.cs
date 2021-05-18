@@ -10,7 +10,8 @@ namespace DataCardio_Test
 
         [DataTestMethod]
         [DataRow(20,"battiti minimi: 140 battiti massimi: 180" )]
-        
+        [DataRow(33, "battiti minimi: 130 battiti massimi: 168")]
+
         public void TestMethod2(int età, string valoreAspettato)
         {
             string prova = DataCardio.FrequenzaConsigliata(età);

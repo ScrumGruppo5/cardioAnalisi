@@ -29,5 +29,12 @@ namespace DataCardio_WPF
             
                 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window1 = new MainWindow();
+            window1.Show();
+            Close();
+        }
     }
 }
