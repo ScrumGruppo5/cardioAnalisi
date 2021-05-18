@@ -18,14 +18,13 @@ namespace cardioLibrary
         {
             if (battiti <= 0)
                 return "Valore errato";
-            {
-                if (battiti < 60)
-                    return "Bradicardia";
-                else if (battiti >= 60 && battiti <= 100)
-                    return "Normale";
-                else
-                    return "Tachicardia";
-            }
+            if (battiti < 60)
+                return "Bradicardia";
+            else if (battiti >= 60 && battiti <= 100)
+                return "Normale";
+            else
+                return "Tachicardia";
+
         }
         public static double CalorieBruciate(string sesso, int età, double peso, double durata, double frequenza)
         {
