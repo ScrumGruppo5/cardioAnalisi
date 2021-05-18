@@ -12,7 +12,7 @@ namespace DataCardio_Test
         [DataRow(20,"battiti minimi: 140 battiti massimi: 180" )]
         [DataRow(33, "battiti minimi: 130 battiti massimi: 168")]
 
-        public void TestMethod2(int età, string valoreAspettato)
+        public void TestMinMax(int età, string valoreAspettato)
         {
             string prova = DataCardio.FrequenzaConsigliata(età);
             Assert.AreEqual(valoreAspettato, prova);
@@ -21,7 +21,7 @@ namespace DataCardio_Test
         [DataRow(60, "Normale")]
         [DataRow(40, "Bradicardia")]
         [DataRow(200, "Tachicardia")]
-        public void TestMethod3(int battiti, string valoreAspettato)
+        public void TestTipo(int battiti, string valoreAspettato)
         {
             string prova = DataCardio.FrequenzaCardiaca(battiti);
             Assert.AreEqual(valoreAspettato, prova);
@@ -29,7 +29,7 @@ namespace DataCardio_Test
         [DataTestMethod]
         [DataRow("uomo", 20, 70, 20, 200, 425.66)]
         [DataRow("donna", 20, 67, 20, 200, 296.73)]
-        public void TestMethod4(string sesso, int età, double peso, double durata, double frequenza, double valoreAspettato)
+        public void TestCalorieBruciate(string sesso, int età, double peso, double durata, double frequenza, double valoreAspettato)
         {
             double prova = DataCardio.CalorieBruciate(sesso, età, peso, durata, frequenza);
             Assert.AreEqual(valoreAspettato, prova);
@@ -37,21 +37,21 @@ namespace DataCardio_Test
         [DataTestMethod]
         [DataRow("corsa", 20, 70, 1260)]
         [DataRow("camminata", 20, 70, 700)]
-        public void TestMethod5(string tipo, double km, double peso, double valoreAspettato)
+        public void TestSpesaEnergetica(string tipo, double km, double peso, double valoreAspettato)
         {
             double prova = DataCardio.SpesaEnergetica(tipo, km, peso);
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]
         [DataRow("dati.txt", 58.01)]
-        public void TestMethod6(string file, double valoreAspettato)
+        public void TestMediaBattiti(string file, double valoreAspettato)
         {
             double prova = DataCardio.MediaBattiti(file);
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]
         [DataRow("dati.txt", 55)]
-        public void TestMethod7(string file, int valoreAspettato)
+        public void TestBattitiRiposo(string file, int valoreAspettato)
         {
             int prova = DataCardio.BattitiRiposo(file);
             Assert.AreEqual(valoreAspettato, prova);
