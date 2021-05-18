@@ -82,7 +82,22 @@ namespace cardioLibrary
             dati.Sort();
             int min = dati[1];
             return min;
-
+        }
+        public static int VariabilitàBattiti(string file)
+        {
+            List<int> dati = new List<int>();
+            using StreamReader r = new StreamReader(file);
+            string line;
+            while ((line = r.ReadLine()) != null)
+            {
+                Int32.TryParse(line, out int n);
+                dati.Add(n);
+            }
+            dati.Sort();
+            int min = dati[1];
+            int max = dati[1440];
+            int variabilità = max - min;
+            return variabilità;
         }
     }
 }

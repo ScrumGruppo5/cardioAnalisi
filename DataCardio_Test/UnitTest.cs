@@ -6,8 +6,6 @@ namespace DataCardio_Test
     [TestClass]
     public class UnitTest
     {
-
-
         [DataTestMethod]
         [DataRow(20,"battiti minimi: 140 battiti massimi: 180" )]
         [DataRow(33, "battiti minimi: 130 battiti massimi: 168")]
@@ -56,5 +54,13 @@ namespace DataCardio_Test
             int prova = DataCardio.BattitiRiposo(file);
             Assert.AreEqual(valoreAspettato, prova);
         }
+        [DataTestMethod]
+        [DataRow("dati.txt", 6)]
+        public void TestVariabilit‡(string file, int valoreAspettato)
+        {
+            int prova = DataCardio.Variabilit‡Battiti(file);
+            Assert.AreEqual(valoreAspettato, prova);
+        }
+
     }
 }
