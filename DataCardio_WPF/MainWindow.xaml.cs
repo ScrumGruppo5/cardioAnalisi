@@ -35,12 +35,27 @@ namespace DataCardio_WPF
                 MessageBox.Show("Compilare Tutti i Campi", "ATTENZIONE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
             else
-            {
-                SchedaCliente window2 = new SchedaCliente(txtNome.Text);
+            {             
+                string sesso, allenamento;
+                if(rdbMaschio.IsChecked==true)
+                {
+                    sesso = "Maschio";
+                }
+                else
+                {
+                    sesso = "Femmina";
+                }
+                if(rdbCorsa.IsChecked==true)
+                {
+                    allenamento = "Corsa";
+                }
+                else
+                {
+                    allenamento = "Camminata";
+                }
+                SchedaCliente window2 = new SchedaCliente(txtNome.Text, txtCognome.Text, txtEtà.Text, txtPeso.Text, txtDurata.Text, txtDistanza.Text, sesso, allenamento);
                 window2.Show();
-                Close();
-                nome = txtNome.Text;
-                
+                Close();                             
             }
         }
         

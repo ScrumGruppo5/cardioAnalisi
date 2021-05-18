@@ -18,10 +18,16 @@ namespace DataCardio_WPF
     /// </summary>
     public partial class SchedaCliente : Window
     {
-        public SchedaCliente(string nome)
+        public SchedaCliente(string nome,string cognome, string età, string peso, string durata, string distanza,string sesso, string allenamento)
         {
             InitializeComponent();
             lblNome.Content = nome;
+            lblCognome.Content = cognome;
+            lblEtà.Content = età;
+            lblPeso.Content = peso;
+            lblSesso.Content = sesso;
+            
+                
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataCardio_WPF"
         mc:Ignorable="d"
-        Title="Scheda Cliente" Height="450" Width="628">
+        Title="Scheda Cliente" Height="450" Width="661">
     <Grid>
         <TextBox HorizontalAlignment="Left" Margin="139,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="4" BorderBrush="Black" Height="434" RenderTransformOrigin="0.5,0.5">Background="Black"
             <TextBox.RenderTransform>
@@ -21,11 +21,13 @@
         <Image HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="138" Source="/unnamed.gif"/>
         <Label Content="Nome" HorizontalAlignment="Left" Margin="50,83,0,0" VerticalAlignment="Top"/>
         <Label Content="Cognome" HorizontalAlignment="Left" Margin="40,140,0,0" VerticalAlignment="Top"/>
-        <Label Content="Età" HorizontalAlignment="Left" Margin="58,200,0,0" VerticalAlignment="Top"/>
-        <Label Content="Peso" HorizontalAlignment="Left" Margin="53,269,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblNome" Content="Label" HorizontalAlignment="Left" Margin="52,109,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCognome" Content="Label" HorizontalAlignment="Left" Margin="53,166,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblEtà" Content="Label" HorizontalAlignment="Left" Margin="52,226,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblPeso" Content="Label" HorizontalAlignment="Left" Margin="52,295,0,0" VerticalAlignment="Top"/>
+        <Label Content="Età" HorizontalAlignment="Left" Margin="58,195,0,0" VerticalAlignment="Top"/>
+        <Label Content="Peso" HorizontalAlignment="Left" Margin="55,320,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNome" Content="" HorizontalAlignment="left" Margin="40,109,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="lblCognome" Content="" HorizontalAlignment="Left" Margin="40,166,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="lblEtà" Content="" HorizontalAlignment="Left" Margin="58,221,0,0" VerticalAlignment="Top" Width="26"/>
+        <Label x:Name="lblPeso" Content="" HorizontalAlignment="Left" Margin="53,347,0,0" VerticalAlignment="Top" Width="37"/>
+        <Label x:Name="lblSesso" Content="" HorizontalAlignment="Left" Margin="41,285,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Content="Sesso" HorizontalAlignment="Left" Margin="53,254,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

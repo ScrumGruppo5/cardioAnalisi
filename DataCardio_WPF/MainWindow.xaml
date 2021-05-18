@@ -19,11 +19,11 @@
         <Label Content="Peso(Kg)" HorizontalAlignment="Left" Margin="155,191,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Margin="123,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Sesso" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.56,0.54"/>
-        <RadioButton x:Name="txtFemmina" Content="Femmina" HorizontalAlignment="Left" Margin="355,224,0,0" VerticalAlignment="Top" GroupName="sesso"/>
+        <RadioButton x:Name="rdbFemmina" Content="Femmina" HorizontalAlignment="Left" Margin="355,224,0,0" VerticalAlignment="Top" GroupName="sesso"/>
         <RadioButton x:Name="rdbMaschio" Content="Maschio" HorizontalAlignment="Left" Margin="282,224,0,0" VerticalAlignment="Top" GroupName="sesso"/>
         <Label Content="Tipo di Allenamento" HorizontalAlignment="Left" Margin="467,191,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="txtCorsa" Content="Corsa" HorizontalAlignment="Left" Margin="461,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
-        <RadioButton x:Name="txtCamminata" Content="Camminata" HorizontalAlignment="Left" Margin="515,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
+        <RadioButton x:Name="rdbCorsa" Content="Corsa" HorizontalAlignment="Left" Margin="461,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
+        <RadioButton x:Name="rdbCamminata" Content="Camminata" HorizontalAlignment="Left" Margin="515,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
         <Label Content="Durata Allenamento" HorizontalAlignment="Left" Margin="194,263,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="194,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Distanza Percorsa" HorizontalAlignment="Left" Margin="389,264,0,0" VerticalAlignment="Top"/>

@@ -68,5 +68,22 @@ namespace cardioLibrary
             return tot;
 
         }
+        public static int BattitiRiposo(string file)
+        {
+            List<int> dati = new List<int>();
+            using (StreamReader r = new StreamReader(file))
+            {
+                string line;
+                while ((line = r.ReadLine()) != null)
+                {
+                    Int32.TryParse(line, out int n);
+                    dati.Add(n);
+                }
+            }
+            dati.Sort();
+            int min = dati[1];
+            return min;
+
+        }
     }
 }

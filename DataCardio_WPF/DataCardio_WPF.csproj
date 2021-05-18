@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\cardioLibrary\cardioLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="unnamed.gif" />
   </ItemGroup>
 
