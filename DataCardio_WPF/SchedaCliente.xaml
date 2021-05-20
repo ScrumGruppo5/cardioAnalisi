@@ -35,7 +35,7 @@
         <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="217,187,0,0" VerticalAlignment="Top" Width="84"/>
         <Label Content="Calorie bruciate dopo l'allenamento" HorizontalAlignment="Left" Margin="354,187,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblCalorieBruciate" Content="" HorizontalAlignment="Left" Margin="568,187,0,0" VerticalAlignment="Top" Width="72"/>
-        <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="154,130,0,0" VerticalAlignment="Top" Width="269"/>
+        <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="426,128,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Battito medio giornaliero" HorizontalAlignment="Left" Margin="154,259,0,0" VerticalAlignment="Top" Width="151"/>
         <Label x:Name="lblBattitoMedio" Content="" HorizontalAlignment="Left" Margin="339,260,0,0" VerticalAlignment="Top" Width="84"/>
         <Label Content="Il tuo battito a riposo" HorizontalAlignment="Left" Margin="438,259,0,0" VerticalAlignment="Top" Width="129"/>
@@ -45,5 +45,6 @@
         <Label Content="Soglia anaerobica" HorizontalAlignment="Left" Margin="438,324,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblSoglia" Content="" HorizontalAlignment="Left" Margin="585,319,0,0" VerticalAlignment="Top" Width="64"/>
         <Label Content="Dati" HorizontalAlignment="Left" Margin="292,10,0,0" VerticalAlignment="Top" Height="54" Width="178" Foreground="Red" FontWeight="Bold" FontSize="36" FontStyle="Italic" HorizontalContentAlignment="Center"/>
+        <Label Content="Dopo l'allenamento sono state consumate:" HorizontalAlignment="Left" Margin="154,128,0,0" VerticalAlignment="Top" Width="246"/>
     </Grid>
 </Window>
