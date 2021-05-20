@@ -40,16 +40,15 @@ namespace cardioLibrary
             c = Math.Round(c, 2);
             return c;
         }
-        public static double SpesaEnergetica(string tipo, double km, double peso)
+        public static string SpesaEnergetica(string tipo, double km, double peso)
         {
             if (tipo.ToLower() == "corsa")
-                return 0.9 * km * peso;
+                return (0.9 * km * peso).ToString();
             else if (tipo.ToLower() == "camminata")
-                return 0.50 * km * peso;
+                return (0.50 * km * peso).ToString();
             else
-                return 1;
+                return "Input Errato";
         }
-
         public static double MediaBattiti(string file)
         {
             double somma = 0, tot;

@@ -33,11 +33,12 @@ namespace DataCardio_Test
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]
-        [DataRow("corsa", 20, 70, 1260)]
-        [DataRow("camminata", 20, 70, 700)]
-        public void TestSpesaEnergetica(string tipo, double km, double peso, double valoreAspettato)
+        [DataRow("corsa", 20, 70, "1260")]
+        [DataRow("camminata", 20, 70, "700")]
+        [DataRow("ciao", 20, 70, "Input Errato")]
+        public void TestSpesaEnergetica(string tipo, double km, double peso, string valoreAspettato)
         {
-            double prova = DataCardio.SpesaEnergetica(tipo, km, peso);
+            string prova = DataCardio.SpesaEnergetica(tipo, km, peso);
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]

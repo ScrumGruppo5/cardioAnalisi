@@ -19,7 +19,7 @@ namespace DataCardio_WPF
     /// </summary>
     public partial class SchedaCliente : Window
     {
-        public SchedaCliente(string nome,string cognome, string età, string peso, string durata, string distanza,string sesso, string allenamento)
+        public SchedaCliente(string nome, string cognome, int età, double peso, double durata, double distanza, string sesso, string allenamento)
         {
             InitializeComponent();
             lblNome.Content = nome;
@@ -27,8 +27,16 @@ namespace DataCardio_WPF
             lblEtà.Content = età;
             lblPeso.Content = peso;
             lblSesso.Content = sesso;
-            lblEfficace.Content = DataCardio.FrequenzaConsigliata(int.Parse(età));
-                
+            lblEfficace.Content = DataCardio.FrequenzaConsigliata(età) + "bpm";
+            lblTipo.Content = DataCardio.FrequenzaCardiaca((int)DataCardio.MediaBattiti("dati.txt"));
+            lblCalorieBruciate.Content = DataCardio.CalorieBruciate(sesso, età, peso, durata, DataCardio.MediaBattiti("dati.txt"));
+            lblSpesaEnergetica.Content = $"Dopo l'allenamento hai consumato {DataCardio.SpesaEnergetica(allenamento, distanza, peso)}KCal";
+            lblBattitoMedio.Content = DataCardio.MediaBattiti("dati.txt") + "bpm";
+            lblBattitoRiposo.Content = DataCardio.BattitiRiposo("dati.txt") + "bpm";
+            lblVariabilità.Content = DataCardio.VariabilitàBattiti("dati.txt");
+            lblSoglia.Content = DataCardio.SogliaAnaerobica(età);
+
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

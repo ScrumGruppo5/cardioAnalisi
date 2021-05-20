@@ -21,43 +21,63 @@ namespace DataCardio_WPF
 
     public partial class MainWindow : Window
     {
-       
+
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (txtNome.Text == "" || txtCognome.Text == "")
+            if (txtNome.Text == "" || txtCognome.Text == "" || txtEtà.Text == "" || txtPeso.Text == "" || txtDistanza.Text == "" || txtDurata.Text == "")
             {
                 MessageBox.Show("Compilare Tutti i Campi", "ATTENZIONE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
             else
-            {             
-                string sesso, allenamento;
-                if(rdbMaschio.IsChecked==true)
+            {
+                try
                 {
-                    sesso = "Maschio";
+                    int età = int.Parse(txtEtà.Text);
+                    double peso = double.Parse(txtPeso.Text);
+                    double durata = double.Parse(txtDurata.Text);
+                    double distanza = double.Parse(txtDistanza.Text);
+                    if (età > 0 && peso > 0 && durata > 0 && distanza > 0)
+                    {
+                        string sesso, allenamento;
+                        if (rdbMaschio.IsChecked == true)
+                        {
+                            sesso = "Maschio";
+                        }
+                        else
+                        {
+                            sesso = "Femmina";
+                        }
+                        if (rdbCorsa.IsChecked == true)
+                        {
+                            allenamento = "Corsa";
+                        }
+                        else
+                        {
+                            allenamento = "Camminata";
+                        }
+                        SchedaCliente window2 = new SchedaCliente(txtNome.Text, txtCognome.Text, età, peso, durata, distanza, sesso, allenamento);
+                        window2.Show();
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Dati Inseriti non Corretti", "ATTENZIONE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    sesso = "Femmina";
+                    MessageBox.Show($"{ex}", "ATTENZIONE", MessageBoxButton.OK, MessageBoxImage.Exclamation);
                 }
-                if(rdbCorsa.IsChecked==true)
-                {
-                    allenamento = "Corsa";
-                }
-                else
-                {
-                    allenamento = "Camminata";
-                }
-                SchedaCliente window2 = new SchedaCliente(txtNome.Text, txtCognome.Text, txtEtà.Text, txtPeso.Text, txtDurata.Text, txtDistanza.Text, sesso, allenamento);
-                window2.Show();
-                Close();                             
+
             }
         }
-        
+
     }
 }
