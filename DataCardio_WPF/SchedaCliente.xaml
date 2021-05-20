@@ -28,21 +28,22 @@
         <Label x:Name="lblSesso" Content="" HorizontalAlignment="Left" Margin="37,270,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Center"/>
         <Label Content="Sesso" HorizontalAlignment="Left" Margin="49,239,0,0" VerticalAlignment="Top"/>
         <Button Content="Modifica i dati" HorizontalAlignment="Left" Margin="19,372,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
-        <Label Content="Frequenza cardiaca per un allenamento efficace:" HorizontalAlignment="Left" Margin="163,25,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblEfficace" Content="" HorizontalAlignment="Left" Margin="432,25,0,0" VerticalAlignment="Top" Width="232"/>
+        <Label Content="Frequenza cardiaca per un allenamento efficace:" HorizontalAlignment="Left" Margin="154,74,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEfficace" Content="" HorizontalAlignment="Left" Margin="423,74,0,0" VerticalAlignment="Top" Width="232"/>
         <Image HorizontalAlignment="Left" Height="137" Margin="-10,-6,0,0" VerticalAlignment="Top" Width="158" Source="/SodaPDF-converted-unnamed-removebg-preview.png"/>
-        <Label Content="Battito " HorizontalAlignment="Left" Margin="163,138,0,0" VerticalAlignment="Top" Width="50"/>
-        <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="226,138,0,0" VerticalAlignment="Top" Width="84"/>
-        <Label Content="Calorie bruciate dopo l'allenamento" HorizontalAlignment="Left" Margin="363,138,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCalorieBruciate" Content="" HorizontalAlignment="Left" Margin="577,138,0,0" VerticalAlignment="Top" Width="72"/>
-        <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="163,81,0,0" VerticalAlignment="Top" Width="269"/>
-        <Label Content="Battito medio giornaliero" HorizontalAlignment="Left" Margin="163,210,0,0" VerticalAlignment="Top" Width="151"/>
-        <Label x:Name="lblBattitoMedio" Content="" HorizontalAlignment="Left" Margin="348,0,0,0" VerticalAlignment="Center" Width="84"/>
-        <Label Content="Il tuo battito a riposo" HorizontalAlignment="Left" Margin="447,210,0,0" VerticalAlignment="Top" Width="129"/>
-        <Label x:Name="lblBattitoRiposo" Content="" HorizontalAlignment="Left" Margin="591,210,0,0" VerticalAlignment="Top" Width="67"/>
-        <Label Content="Variabilita del battito cardiaco" HorizontalAlignment="Left" Margin="161,275,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblVariabilità" Content="" HorizontalAlignment="Left" Margin="348,275,0,0" VerticalAlignment="Top" Width="84"/>
-        <Label Content="Soglia anaerobica" HorizontalAlignment="Left" Margin="447,275,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblSoglia" Content="" HorizontalAlignment="Left" Margin="594,270,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Battito " HorizontalAlignment="Left" Margin="154,187,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="217,187,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Calorie bruciate dopo l'allenamento" HorizontalAlignment="Left" Margin="354,187,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCalorieBruciate" Content="" HorizontalAlignment="Left" Margin="568,187,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="154,130,0,0" VerticalAlignment="Top" Width="269"/>
+        <Label Content="Battito medio giornaliero" HorizontalAlignment="Left" Margin="154,259,0,0" VerticalAlignment="Top" Width="151"/>
+        <Label x:Name="lblBattitoMedio" Content="" HorizontalAlignment="Left" Margin="339,260,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Il tuo battito a riposo" HorizontalAlignment="Left" Margin="438,259,0,0" VerticalAlignment="Top" Width="129"/>
+        <Label x:Name="lblBattitoRiposo" Content="" HorizontalAlignment="Left" Margin="582,259,0,0" VerticalAlignment="Top" Width="67"/>
+        <Label Content="Variabilita del battito cardiaco" HorizontalAlignment="Left" Margin="152,324,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblVariabilità" Content="" HorizontalAlignment="Left" Margin="339,324,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label Content="Soglia anaerobica" HorizontalAlignment="Left" Margin="438,324,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSoglia" Content="" HorizontalAlignment="Left" Margin="585,319,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Dati" HorizontalAlignment="Left" Margin="292,10,0,0" VerticalAlignment="Top" Height="54" Width="178" Foreground="Red" FontWeight="Bold" FontSize="36" FontStyle="Italic" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>
