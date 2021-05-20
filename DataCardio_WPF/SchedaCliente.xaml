@@ -17,18 +17,19 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-
-        <Image HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="138" Source="/unnamed.gif"/>
         <Label Content="Nome" HorizontalAlignment="Left" Margin="46,68,0,0" VerticalAlignment="Top"/>
         <Label Content="Cognome" HorizontalAlignment="Left" Margin="36,125,0,0" VerticalAlignment="Top"/>
         <Label Content="Età" HorizontalAlignment="Left" Margin="54,180,0,0" VerticalAlignment="Top"/>
         <Label Content="Peso" HorizontalAlignment="Left" Margin="51,305,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblNome" Content="" HorizontalAlignment="Left" Margin="36,94,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Center"/>
-        <Label x:Name="lblCognome" Content="" HorizontalAlignment="Left" Margin="36,151,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblCognome" Content="" HorizontalAlignment="Left" Margin="37,151,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Center"/>
         <Label x:Name="lblEtà" Content="" HorizontalAlignment="Left" Margin="54,206,0,0" VerticalAlignment="Top" Width="26" HorizontalContentAlignment="Center"/>
         <Label x:Name="lblPeso" Content="" HorizontalAlignment="Left" Margin="49,332,0,0" VerticalAlignment="Top" Width="37" HorizontalContentAlignment="Center"/>
         <Label x:Name="lblSesso" Content="" HorizontalAlignment="Left" Margin="37,270,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Center"/>
         <Label Content="Sesso" HorizontalAlignment="Left" Margin="49,239,0,0" VerticalAlignment="Top"/>
         <Button Content="Modifica i dati" HorizontalAlignment="Left" Margin="19,372,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
+        <Label Content="Frequenza cardiaca per un allenamento efficace:" HorizontalAlignment="Left" Margin="148,15,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEfficace" Content="" HorizontalAlignment="Left" Margin="417,15,0,0" VerticalAlignment="Top" Width="232"/>
+        <Image HorizontalAlignment="Left" Height="137" Margin="-10,-6,0,0" VerticalAlignment="Top" Width="158" Source="/SodaPDF-converted-unnamed-removebg-preview.png"/>
     </Grid>
 </Window>

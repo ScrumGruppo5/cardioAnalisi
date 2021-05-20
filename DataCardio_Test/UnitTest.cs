@@ -7,8 +7,8 @@ namespace DataCardio_Test
     public class UnitTest
     {
         [DataTestMethod]
-        [DataRow(20,"battiti minimi: 140 battiti massimi: 180" )]
-        [DataRow(33, "battiti minimi: 130 battiti massimi: 168")]
+        [DataRow(20,"minima: 140 massima: 180" )]
+        [DataRow(33, "minima: 130 massima: 168")]
 
         public void TestMinMax(int et‡, string valoreAspettato)
         {
@@ -59,6 +59,15 @@ namespace DataCardio_Test
         public void TestVariabilit‡(string file, int valoreAspettato)
         {
             int prova = DataCardio.Variabilit‡Battiti(file);
+            Assert.AreEqual(valoreAspettato, prova);
+        }
+        [DataTestMethod]
+        [DataRow(30, 177.65)]
+        [DataRow(24, 183.26)]
+        [DataRow(40, 168.3)]
+        public void TestSoglia(int et‡, double valoreAspettato)
+        {
+            double prova = DataCardio.SogliaAnaerobica(et‡);
             Assert.AreEqual(valoreAspettato, prova);
         }
 

@@ -21,7 +21,7 @@ namespace DataCardio_WPF
 
     public partial class MainWindow : Window
     {
-        string nome;
+       
         public MainWindow()
         {
             InitializeComponent();

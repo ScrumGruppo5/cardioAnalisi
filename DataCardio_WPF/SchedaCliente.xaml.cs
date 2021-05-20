@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cardioLibrary;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -26,7 +27,7 @@ namespace DataCardio_WPF
             lblEtà.Content = età;
             lblPeso.Content = peso;
             lblSesso.Content = sesso;
-            
+            lblEfficace.Content = DataCardio.FrequenzaConsigliata(int.Parse(età));
                 
         }
 

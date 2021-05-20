@@ -11,7 +11,7 @@ namespace cardioLibrary
             int f = 220 - età;
             double min = (f * 70) / 100;
             double max = (f * 90) / 100;
-            string risultato = ($"battiti minimi: {min} battiti massimi: {max}");
+            string risultato = ($"minima: {min} massima: {max}");
             return risultato;
         }
         public static string FrequenzaCardiaca(int battiti)
@@ -98,6 +98,11 @@ namespace cardioLibrary
             int max = dati[1440];
             int variabilità = max - min;
             return variabilità;
+        }
+        public static double SogliaAnaerobica(int età)
+        {
+            int f = 220 - età;
+            return Math.Round(f * 0.935, 2);
         }
     }
 }

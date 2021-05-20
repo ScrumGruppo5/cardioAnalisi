@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="unnamed.gif" />
+    <None Remove="SodaPDF-converted-unnamed-removebg-preview.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="unnamed.gif" />
+    <Resource Include="SodaPDF-converted-unnamed-removebg-preview.png" />
   </ItemGroup>
 
 </Project>

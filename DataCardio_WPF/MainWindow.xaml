@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataCardio_WPF"
         mc:Ignorable="d"
-        Title="CardioFit" Height="450" Width="710" Icon="/unnamed.gif">
+        Title="CardioFit" Height="450" Width="710">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="143" VerticalAlignment="Top" Width="269" Source="/unnamed.gif" Margin="236,-12,0,0" />
         <Label Content="Compila la tua scheda" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnAvanti" Content="Calcola Dati" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="48" Width="146" Click="Button_Click"/>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="162,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="155,120,0,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Vivian" FontSize="14"/>
         <Label Content="Cognome" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top"/>
         <Label Content="Età" HorizontalAlignment="Left" Margin="514,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.844,0.487"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="123,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -24,10 +23,13 @@
         <Label Content="Tipo di Allenamento" HorizontalAlignment="Left" Margin="467,191,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rdbCorsa" Content="Corsa" HorizontalAlignment="Left" Margin="461,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
         <RadioButton x:Name="rdbCamminata" Content="Camminata" HorizontalAlignment="Left" Margin="515,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
-        <Label Content="Durata Allenamento" HorizontalAlignment="Left" Margin="194,263,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="194,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Distanza Percorsa" HorizontalAlignment="Left" Margin="389,264,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDistanza" HorizontalAlignment="Left" Margin="382,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Durata Allenamento" HorizontalAlignment="Left" Margin="125,264,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="123,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Distanza Percorsa" HorizontalAlignment="Left" Margin="301,264,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDistanza" HorizontalAlignment="Center" Margin="0,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="File con i tuoi battiti" HorizontalAlignment="Left" Margin="468,264,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNomeFile" HorizontalAlignment="Left" Margin="464,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Image HorizontalAlignment="Left" Height="177" Margin="211,-42,0,0" VerticalAlignment="Top" Width="311" Source="/SodaPDF-converted-unnamed-removebg-preview.png"/>
 
     </Grid>
 </Window>
