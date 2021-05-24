@@ -37,7 +37,7 @@
         <Label Content="Frequenza cardiaca per un allenamento efficace:" HorizontalAlignment="Left" Margin="123,65,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
         <Label x:Name="lblEfficace" Content="" HorizontalAlignment="Left" Margin="182,65,0,0" VerticalAlignment="Top" Width="232" Grid.Column="2" Grid.ColumnSpan="2" FontFamily="Vivian" FontSize="12"/>
         <Image HorizontalAlignment="Left" Height="124" Margin="-4,-12,0,0" VerticalAlignment="Top" Width="152" Source="/SodaPDF-converted-unnamed-removebg-preview.png" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="134,166,0,0" VerticalAlignment="Top" Width="84" Grid.Column="2" FontFamily="Vivian"/>
+        <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="116,166,0,0" VerticalAlignment="Top" Width="84" Grid.Column="2" FontFamily="Vivian"/>
         <Label Content="Calorie bruciate dopo l'allenamento" HorizontalAlignment="Left" Margin="123,218,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
         <Label x:Name="lblCalorieBruciate" Content="" HorizontalAlignment="Left" Margin="115,218,0,0" VerticalAlignment="Top" Width="72" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
         <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="156,114,0,0" VerticalAlignment="Top" Width="64" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
@@ -51,7 +51,7 @@
         <Label x:Name="lblSoglia" Content="" HorizontalAlignment="Left" Margin="21,376,0,0" VerticalAlignment="Top" Width="64" Grid.Column="2" FontFamily="Vivian"/>
         <Label Content="Dati" HorizontalAlignment="Left" Margin="40,3,0,0" VerticalAlignment="Top" Height="54" Width="178" Foreground="Red" FontWeight="Bold" FontSize="36" FontStyle="Italic" HorizontalContentAlignment="Center" Grid.Column="2"/>
         <Label Content="Dopo l'allenamento sono state consumate:" HorizontalAlignment="Left" Margin="123,114,0,0" VerticalAlignment="Top" Width="249" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="565" Margin="46,103,0,0" VerticalAlignment="Top" Width="584" ScrollViewer.HorizontalScrollBarVisibility="Auto" Source="/tsuneo121000340-removebg-preview.png" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.ColumnSpan="2">
+        <Image HorizontalAlignment="Left" Height="565" Margin="45,105,0,0" VerticalAlignment="Top" Width="584" ScrollViewer.HorizontalScrollBarVisibility="Auto" Source="/tsuneo121000340-removebg-preview.png" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.ColumnSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
