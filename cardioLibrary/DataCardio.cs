@@ -49,10 +49,22 @@ namespace cardioLibrary
             else
                 return "Input Errato";
         }
-        public static double MediaBattiti(string file)
+        public static void GeneraBattiti()
+        {
+            Random n = new Random();
+            using (StreamWriter w = new StreamWriter("dati.txt"))
+            {
+                for (int i = 0; i < 1440; i++)
+                {
+                    w.WriteLine(n.Next(50, 71));
+                }
+                w.Flush();
+            }
+        }
+        public static double MediaBattiti()
         {
             double somma = 0, tot;
-            using (StreamReader r = new StreamReader(file))
+            using (StreamReader r = new StreamReader("dati.txt"))
             {
                 string line;
                 while ((line = r.ReadLine()) != null)
@@ -66,10 +78,10 @@ namespace cardioLibrary
             return tot;
 
         }
-        public static int BattitiRiposo(string file)
+        public static int BattitiRiposo()
         {
             List<int> dati = new List<int>();
-            using (StreamReader r = new StreamReader(file))
+            using (StreamReader r = new StreamReader("dati.txt"))
             {
                 string line;
                 while ((line = r.ReadLine()) != null)
@@ -79,13 +91,13 @@ namespace cardioLibrary
                 }
             }
             dati.Sort();
-            int min = dati[1];
+            int min = dati[0];
             return min;
         }
-        public static int VariabilitàBattiti(string file)
+        public static int VariabilitàBattiti()
         {
             List<int> dati = new List<int>();
-            using StreamReader r = new StreamReader(file);
+            using StreamReader r = new StreamReader("dati.txt");
             string line;
             while ((line = r.ReadLine()) != null)
             {
@@ -93,8 +105,8 @@ namespace cardioLibrary
                 dati.Add(n);
             }
             dati.Sort();
-            int min = dati[1];
-            int max = dati[1440];
+            int min = dati[0];
+            int max = dati[1439];
             int variabilità = max - min;
             return variabilità;
         }
@@ -104,4 +116,5 @@ namespace cardioLibrary
             return Math.Round(f * 0.935, 2);
         }
     }
+
 }

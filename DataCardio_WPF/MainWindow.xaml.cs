@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cardioLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +26,7 @@ namespace DataCardio_WPF
         public MainWindow()
         {
             InitializeComponent();
-
+            DataCardio.GeneraBattiti();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -42,16 +43,16 @@ namespace DataCardio_WPF
                     double peso = double.Parse(txtPeso.Text);
                     double durata = double.Parse(txtDurata.Text);
                     double distanza = double.Parse(txtDistanza.Text);
-                    if (età > 0 && peso > 0 && durata > 0 && distanza > 0)
+                    if (età > 0 && età < 120 && peso > 0 && peso < 200 && durata > 0 && distanza > 0)
                     {
                         string sesso, allenamento;
                         if (rdbMaschio.IsChecked == true)
                         {
-                            sesso = "Maschio";
+                            sesso = "uomo";
                         }
                         else
                         {
-                            sesso = "Femmina";
+                            sesso = "donna";
                         }
                         if (rdbCorsa.IsChecked == true)
                         {

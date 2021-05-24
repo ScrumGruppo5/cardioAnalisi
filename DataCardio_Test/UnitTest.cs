@@ -7,7 +7,7 @@ namespace DataCardio_Test
     public class UnitTest
     {
         [DataTestMethod]
-        [DataRow(20,"minima: 140 massima: 180" )]
+        [DataRow(20, "minima: 140 massima: 180")]
         [DataRow(33, "minima: 130 massima: 168")]
 
         public void TestMinMax(int et‡, string valoreAspettato)
@@ -39,27 +39,6 @@ namespace DataCardio_Test
         public void TestSpesaEnergetica(string tipo, double km, double peso, string valoreAspettato)
         {
             string prova = DataCardio.SpesaEnergetica(tipo, km, peso);
-            Assert.AreEqual(valoreAspettato, prova);
-        }
-        [DataTestMethod]
-        [DataRow("dati.txt", 58.01)]
-        public void TestMediaBattiti(string file, double valoreAspettato)
-        {
-            double prova = DataCardio.MediaBattiti(file);
-            Assert.AreEqual(valoreAspettato, prova);
-        }
-        [DataTestMethod]
-        [DataRow("dati.txt", 55)]
-        public void TestBattitiRiposo(string file, int valoreAspettato)
-        {
-            int prova = DataCardio.BattitiRiposo(file);
-            Assert.AreEqual(valoreAspettato, prova);
-        }
-        [DataTestMethod]
-        [DataRow("dati.txt", 6)]
-        public void TestVariabilit‡(string file, int valoreAspettato)
-        {
-            int prova = DataCardio.Variabilit‡Battiti(file);
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]

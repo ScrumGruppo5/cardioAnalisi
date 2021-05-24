@@ -5,31 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataCardio_WPF"
         mc:Ignorable="d"
-        Title="CardioFit" Height="450" Width="710" ResizeMode="CanMinimize">
-    <Grid>
+        Title="CardioFit" Height="455" Width="710" ResizeMode="CanMinimize">
+    <Grid Height="435">
         <Label Content="Compila la tua scheda" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnAvanti" Content="Calcola Dati" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="48" Width="146" Click="Button_Click"/>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="155,120,0,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Vivian" FontSize="14"/>
-        <Label Content="Cognome" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top"/>
-        <Label Content="Età" HorizontalAlignment="Left" Margin="514,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.844,0.487"/>
+        <Button x:Name="btnAvanti" Content="Calcola Dati" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="48" Width="146" Click="Button_Click" Background="#FF20B4C3" Foreground="White" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="153,120,0,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Tempus Sans ITC" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Cognome" HorizontalAlignment="Left" Margin="311,120,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <Label Content="Età" HorizontalAlignment="Left" Margin="509,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.844,0.487" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="123,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Margin="292,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtEtà" HorizontalAlignment="Left" Margin="464,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Peso(Kg)" HorizontalAlignment="Left" Margin="155,191,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Margin="123,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Sesso" HorizontalAlignment="Center" Margin="0,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.56,0.54"/>
-        <RadioButton x:Name="rdbFemmina" Content="Femmina" HorizontalAlignment="Left" Margin="355,224,0,0" VerticalAlignment="Top" GroupName="sesso"/>
-        <RadioButton x:Name="rdbMaschio" Content="Maschio" HorizontalAlignment="Left" Margin="282,224,0,0" VerticalAlignment="Top" GroupName="sesso" IsChecked="True"/>
-        <Label Content="Tipo di Allenamento" HorizontalAlignment="Left" Margin="467,191,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rdbCorsa" Content="Corsa" HorizontalAlignment="Left" Margin="461,226,0,0" VerticalAlignment="Top" GroupName="allenamento" IsChecked="True"/>
-        <RadioButton x:Name="rdbCamminata" Content="Camminata" HorizontalAlignment="Left" Margin="515,226,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
-        <Label Content="Durata Allenamento" HorizontalAlignment="Left" Margin="125,264,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="123,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Distanza Percorsa" HorizontalAlignment="Left" Margin="301,264,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDistanza" HorizontalAlignment="Center" Margin="0,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="File con i tuoi battiti" HorizontalAlignment="Left" Margin="469,264,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNomeFile" HorizontalAlignment="Left" Margin="467,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Image HorizontalAlignment="Left" Height="177" Margin="211,-42,0,0" VerticalAlignment="Top" Width="311" Source="/SodaPDF-converted-unnamed-removebg-preview.png"/>
+        <Label Content="Peso(Kg)" HorizontalAlignment="Left" Margin="147,193,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <TextBox x:Name="txtPeso" HorizontalAlignment="Left" Margin="123,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Sesso" HorizontalAlignment="Center" Margin="0,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.56,0.54" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <RadioButton x:Name="rdbFemmina" Content="Femmina" HorizontalAlignment="Left" Margin="355,226,0,0" VerticalAlignment="Top" GroupName="sesso"/>
+        <RadioButton x:Name="rdbMaschio" Content="Maschio" HorizontalAlignment="Left" Margin="282,226,0,0" VerticalAlignment="Top" GroupName="sesso" IsChecked="True"/>
+        <Label Content="Tipo di Allenamento" HorizontalAlignment="Left" Margin="451,193,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <RadioButton x:Name="rdbCorsa" Content="Corsa" HorizontalAlignment="Left" Margin="461,228,0,0" VerticalAlignment="Top" GroupName="allenamento" IsChecked="True"/>
+        <RadioButton x:Name="rdbCamminata" Content="Camminata" HorizontalAlignment="Left" Margin="515,228,0,0" VerticalAlignment="Top" GroupName="allenamento"/>
+        <Label Content="Durata Allenamento(min)" HorizontalAlignment="Left" Margin="181,266,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="184,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Distanza Percorsa(Km)" HorizontalAlignment="Left" Margin="405,266,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="16" FontFamily="Tempus Sans ITC"/>
+        <TextBox x:Name="txtDistanza" HorizontalAlignment="Left" Margin="405,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Image HorizontalAlignment="Left" Height="177" Margin="206,-44,0,0" VerticalAlignment="Top" Width="311" Source="/SodaPDF-converted-unnamed-removebg-preview.png"/>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="713" Background="#FF20B4C3" Margin="-3,-2,0,0"/>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="435" Background="#FF20B4C3" Margin="-215,219,0,0" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.147"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="714" Background="#FF20B4C3" Margin="-4,408,0,0"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="688,-2,0,0" VerticalAlignment="Top" Height="414" Width="12" Background="#FF20B4C3"/>
+        <Image HorizontalAlignment="Left" Height="229" Margin="-21,206,0,0" VerticalAlignment="Top" Width="232" Source="/58020941-running-man-vector-silhouette-removebg-preview.png"/>
 
     </Grid>
 </Window>
