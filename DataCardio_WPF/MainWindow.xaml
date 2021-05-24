@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataCardio_WPF"
         mc:Ignorable="d"
-        Title="CardioFit" Height="455" Width="710" ResizeMode="CanMinimize">
+        Title="CardioFit" Height="455" Width="710" ResizeMode="CanMinimize" Icon="/Cattura.PNG">
     <Grid Height="435">
         <Label Content="Compila la tua scheda" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnAvanti" Content="Calcola Dati" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="48" Width="146" Click="Button_Click" Background="#FF20B4C3" Foreground="White" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>

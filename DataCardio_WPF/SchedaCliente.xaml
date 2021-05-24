@@ -9,7 +9,9 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*"/>
-            <ColumnDefinition Width="643*"/>
+            <ColumnDefinition Width="224*"/>
+            <ColumnDefinition Width="296*"/>
+            <ColumnDefinition Width="123*"/>
         </Grid.ColumnDefinitions>
         <TextBox HorizontalAlignment="Left" Margin="114,-25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="4" BorderBrush="Black" Height="476" RenderTransformOrigin="0.5,0.5" Grid.Column="1" IsEnabled="False">Background="Black"
             <TextBox.RenderTransform>
@@ -32,24 +34,24 @@
         <Label x:Name="lblSesso" Content="" HorizontalAlignment="Left" Margin="18,272,0,0" VerticalAlignment="Top" Width="62" HorizontalContentAlignment="Center" Grid.Column="1"/>
         <Label Content="Sesso" HorizontalAlignment="Left" Margin="25,238,0,0" VerticalAlignment="Top" Grid.Column="1" FontFamily="Clarendon"/>
         <Button Content="Modifica i dati" HorizontalAlignment="Left" Margin="23,376,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click" Background="#FF20B4C3" Foreground="White" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="2"/>
-        <Label Content="Frequenza cardiaca per un allenamento efficace:" HorizontalAlignment="Left" Margin="129,72,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label x:Name="lblEfficace" Content="" HorizontalAlignment="Left" Margin="398,72,0,0" VerticalAlignment="Top" Width="232" Grid.Column="1"/>
+        <Label Content="Frequenza cardiaca per un allenamento efficace:" HorizontalAlignment="Left" Margin="123,65,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Label x:Name="lblEfficace" Content="" HorizontalAlignment="Left" Margin="182,65,0,0" VerticalAlignment="Top" Width="232" Grid.Column="2" Grid.ColumnSpan="2" FontFamily="Vivian" FontSize="12"/>
         <Image HorizontalAlignment="Left" Height="124" Margin="-4,-12,0,0" VerticalAlignment="Top" Width="152" Source="/SodaPDF-converted-unnamed-removebg-preview.png" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="358,173,0,0" VerticalAlignment="Top" Width="84" Grid.Column="1"/>
-        <Label Content="Calorie bruciate dopo l'allenamento" HorizontalAlignment="Left" Margin="129,225,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label x:Name="lblCalorieBruciate" Content="" HorizontalAlignment="Left" Margin="344,225,0,0" VerticalAlignment="Top" Width="72" Grid.Column="1"/>
-        <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="401,121,0,0" VerticalAlignment="Top" Width="64" Grid.Column="1"/>
-        <Label Content="Battito medio giornaliero" HorizontalAlignment="Left" Margin="130,279,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1"/>
-        <Label x:Name="lblBattitoMedio" Content="" HorizontalAlignment="Left" Margin="291,279,0,0" VerticalAlignment="Top" Width="84" Grid.Column="1"/>
-        <Label Content="Il tuo battito a riposo" HorizontalAlignment="Left" Margin="132,173,0,0" VerticalAlignment="Top" Width="130" Grid.Column="1"/>
-        <Label x:Name="lblBattitoRiposo" Content="" HorizontalAlignment="Left" Margin="265,173,0,0" VerticalAlignment="Top" Width="68" Grid.Column="1"/>
-        <Label Content="Variabilita del battito cardiaco" HorizontalAlignment="Left" Margin="128,330,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label x:Name="lblVariabilità" Content="" HorizontalAlignment="Left" Margin="309,330,0,0" VerticalAlignment="Top" Width="84" Grid.Column="1"/>
-        <Label Content="Soglia anaerobica" HorizontalAlignment="Left" Margin="131,383,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label x:Name="lblSoglia" Content="" HorizontalAlignment="Left" Margin="252,383,0,0" VerticalAlignment="Top" Width="64" Grid.Column="1"/>
-        <Label Content="Dati" HorizontalAlignment="Left" Margin="267,10,0,0" VerticalAlignment="Top" Height="54" Width="178" Foreground="Red" FontWeight="Bold" FontSize="36" FontStyle="Italic" HorizontalContentAlignment="Center" Grid.Column="1"/>
-        <Label Content="Dopo l'allenamento sono state consumate:" HorizontalAlignment="Left" Margin="129,121,0,0" VerticalAlignment="Top" Width="246" Grid.Column="1"/>
-        <Image HorizontalAlignment="Left" Height="565" Margin="263,107,0,0" VerticalAlignment="Top" Width="583" ScrollViewer.HorizontalScrollBarVisibility="Auto" Source="/tsuneo121000340-removebg-preview.png" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+        <Label x:Name="lblTipo" Content="" HorizontalAlignment="Left" Margin="134,166,0,0" VerticalAlignment="Top" Width="84" Grid.Column="2" FontFamily="Vivian"/>
+        <Label Content="Calorie bruciate dopo l'allenamento" HorizontalAlignment="Left" Margin="123,218,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Label x:Name="lblCalorieBruciate" Content="" HorizontalAlignment="Left" Margin="115,218,0,0" VerticalAlignment="Top" Width="72" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
+        <Label x:Name="lblSpesaEnergetica" Content="" HorizontalAlignment="Left" Margin="156,114,0,0" VerticalAlignment="Top" Width="64" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
+        <Label Content="Battito medio giornaliero" HorizontalAlignment="Left" Margin="124,272,0,0" VerticalAlignment="Top" Width="169" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Label x:Name="lblBattitoMedio" Content="" HorizontalAlignment="Left" Margin="67,271,0,0" VerticalAlignment="Top" Width="84" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
+        <Label Content="Il tuo battito a riposo" HorizontalAlignment="Left" Margin="126,166,0,0" VerticalAlignment="Top" Width="130" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Label x:Name="lblBattitoRiposo" Content="" HorizontalAlignment="Left" Margin="41,166,0,0" VerticalAlignment="Top" Width="68" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
+        <Label Content="Variabilita del battito cardiaco" HorizontalAlignment="Left" Margin="122,323,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Label x:Name="lblVariabilità" Content="" HorizontalAlignment="Left" Margin="85,322,0,0" VerticalAlignment="Top" Width="84" Grid.Column="2" FontFamily="Vivian" FontSize="12"/>
+        <Label Content="Soglia anaerobica" HorizontalAlignment="Left" Margin="125,376,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Label x:Name="lblSoglia" Content="" HorizontalAlignment="Left" Margin="21,376,0,0" VerticalAlignment="Top" Width="64" Grid.Column="2" FontFamily="Vivian"/>
+        <Label Content="Dati" HorizontalAlignment="Left" Margin="40,3,0,0" VerticalAlignment="Top" Height="54" Width="178" Foreground="Red" FontWeight="Bold" FontSize="36" FontStyle="Italic" HorizontalContentAlignment="Center" Grid.Column="2"/>
+        <Label Content="Dopo l'allenamento sono state consumate:" HorizontalAlignment="Left" Margin="123,114,0,0" VerticalAlignment="Top" Width="249" Grid.Column="1" Grid.ColumnSpan="2" FontFamily="Segoe UI" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="565" Margin="46,103,0,0" VerticalAlignment="Top" Width="584" ScrollViewer.HorizontalScrollBarVisibility="Auto" Source="/tsuneo121000340-removebg-preview.png" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.ColumnSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -119,9 +121,9 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="713" Background="#FF20B4C3" Margin="-3,-1,0,0" Grid.ColumnSpan="2"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="714" Background="#FF20B4C3" Margin="-4,412,0,0" Grid.ColumnSpan="2"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="621,3,0,0" VerticalAlignment="Top" Height="414" Width="12" Background="#FF20B4C3" Grid.Column="1"/>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="713" Background="#FF20B4C3" Margin="-3,-1,0,0" Grid.ColumnSpan="4"/>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9" Width="714" Background="#FF20B4C3" Margin="-4,412,0,0" Grid.ColumnSpan="4"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="111,3,0,0" VerticalAlignment="Top" Height="414" Width="12" Background="#FF20B4C3" Grid.Column="3"/>
         <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Center" Height="9" Width="434" Background="#FF20B4C3" RenderTransformOrigin="0.5,0.5" Margin="-214,0,0,0" Grid.ColumnSpan="2">
             <Label.RenderTransform>
                 <TransformGroup>

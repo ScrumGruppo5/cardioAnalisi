@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="58020941-running-man-vector-silhouette-removebg-preview.png" />
+    <None Remove="Cattura.PNG" />
     <None Remove="SodaPDF-converted-unnamed-removebg-preview.png" />
     <None Remove="tsuneo121000340-removebg-preview.png" />
   </ItemGroup>
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <Resource Include="58020941-running-man-vector-silhouette-removebg-preview.png" />
+    <Resource Include="Cattura.PNG" />
     <Resource Include="SodaPDF-converted-unnamed-removebg-preview.png" />
     <Resource Include="tsuneo121000340-removebg-preview.png" />
   </ItemGroup>
