@@ -42,6 +42,27 @@ namespace DataCardio_Test
             Assert.AreEqual(valoreAspettato, prova);
         }
         [DataTestMethod]
+        [DataRow("dati.txt", 58.01)]
+        public void TestMediaBattiti(string file, double valoreAspettato)
+        {
+            double prova = DataCardio.MediaBattiti("datiProva.txt");
+            Assert.AreEqual(valoreAspettato, prova);
+        }
+        [DataTestMethod]
+        [DataRow("dati.txt", 55)]
+        public void TestBattitiRiposo(string file, int valoreAspettato)
+        {
+            int prova = DataCardio.BattitiRiposo("datiProva.txt");
+            Assert.AreEqual(valoreAspettato, prova);
+        }
+        [DataTestMethod]
+        [DataRow("dati.txt", 6)]
+        public void TestVariabilit‡(string file, int valoreAspettato)
+        {
+            int prova = DataCardio.Variabilit‡Battiti("datiProva.txt");
+            Assert.AreEqual(valoreAspettato, prova);
+        }
+        [DataTestMethod]
         [DataRow(30, 177.65)]
         [DataRow(24, 183.26)]
         [DataRow(40, 168.3)]

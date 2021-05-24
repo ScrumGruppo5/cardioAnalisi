@@ -61,10 +61,10 @@ namespace cardioLibrary
                 w.Flush();
             }
         }
-        public static double MediaBattiti()
+        public static double MediaBattiti(string file)
         {
             double somma = 0, tot;
-            using (StreamReader r = new StreamReader("dati.txt"))
+            using (StreamReader r = new StreamReader(file))
             {
                 string line;
                 while ((line = r.ReadLine()) != null)
@@ -78,10 +78,10 @@ namespace cardioLibrary
             return tot;
 
         }
-        public static int BattitiRiposo()
+        public static int BattitiRiposo(string file)
         {
             List<int> dati = new List<int>();
-            using (StreamReader r = new StreamReader("dati.txt"))
+            using (StreamReader r = new StreamReader(file))
             {
                 string line;
                 while ((line = r.ReadLine()) != null)
@@ -94,10 +94,10 @@ namespace cardioLibrary
             int min = dati[0];
             return min;
         }
-        public static int VariabilitàBattiti()
+        public static int VariabilitàBattiti(string file)
         {
             List<int> dati = new List<int>();
-            using StreamReader r = new StreamReader("dati.txt");
+            using StreamReader r = new StreamReader(file);
             string line;
             while ((line = r.ReadLine()) != null)
             {

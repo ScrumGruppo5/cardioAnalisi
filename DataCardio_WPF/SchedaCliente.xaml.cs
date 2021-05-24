@@ -29,12 +29,12 @@ namespace DataCardio_WPF
             lblPeso.Content = peso;
             lblSesso.Content = sesso;
             lblEfficace.Content = DataCardio.FrequenzaConsigliata(età) + "bpm";
-            lblTipo.Content = DataCardio.FrequenzaCardiaca((int)DataCardio.MediaBattiti());
-            lblCalorieBruciate.Content = DataCardio.CalorieBruciate(sesso, età, peso, durata, DataCardio.MediaBattiti());
+            lblTipo.Content = DataCardio.FrequenzaCardiaca((int)DataCardio.MediaBattiti("dati.txt"));
+            lblCalorieBruciate.Content = DataCardio.CalorieBruciate(sesso, età, peso, durata, DataCardio.MediaBattiti("dati.txt"));
             lblSpesaEnergetica.Content = DataCardio.SpesaEnergetica(allenamento, distanza, peso) + "KCal";
-            lblBattitoMedio.Content = DataCardio.MediaBattiti() + "bpm";
-            lblBattitoRiposo.Content = DataCardio.BattitiRiposo() + "bpm";
-            lblVariabilità.Content = DataCardio.VariabilitàBattiti();
+            lblBattitoMedio.Content = DataCardio.MediaBattiti("dati.txt") + "bpm";
+            lblBattitoRiposo.Content = DataCardio.BattitiRiposo("dati.txt") + "bpm";
+            lblVariabilità.Content = DataCardio.VariabilitàBattiti("dati.txt");
             lblSoglia.Content = DataCardio.SogliaAnaerobica(età);
 
 

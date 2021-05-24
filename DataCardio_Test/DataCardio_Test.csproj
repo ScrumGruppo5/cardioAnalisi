@@ -17,4 +17,10 @@
     <ProjectReference Include="..\cardioLibrary\cardioLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="datiProva.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
