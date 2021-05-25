@@ -48,24 +48,24 @@ namespace DataCardio_Test
             string prova = DataCardio.SpesaEnergetica(tipo, km, peso);
             Assert.AreEqual(valoreAspettato, prova);
         }
-        [DataTestMethod]
-        [DataRow("dati.txt", 58.01)]
-        public void TestMediaBattiti(string file, double valoreAspettato)
+        [TestMethod]
+        public void TestMediaBattiti()
         {
+            double valoreAspettato = 58.01;
             double prova = DataCardio.MediaBattiti("datiProva.txt");
             Assert.AreEqual(valoreAspettato, prova);
         }
-        [DataTestMethod]
-        [DataRow("dati.txt", 55)]
-        public void TestBattitiRiposo(string file, int valoreAspettato)
+        [TestMethod]
+        public void TestBattitiRiposo()
         {
+            int valoreAspettato = 55;
             int prova = DataCardio.BattitiRiposo("datiProva.txt");
             Assert.AreEqual(valoreAspettato, prova);
         }
-        [DataTestMethod]
-        [DataRow("dati.txt", 6)]
-        public void TestVariabilit‡(string file, int valoreAspettato)
+        [TestMethod]
+        public void TestVariabilit‡()
         {
+            int valoreAspettato = 6;
             int prova = DataCardio.Variabilit‡Battiti("datiProva.txt");
             Assert.AreEqual(valoreAspettato, prova);
         }
