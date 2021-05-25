@@ -9,6 +9,8 @@ namespace DataCardio_Test
         [DataTestMethod]
         [DataRow(20, "minima: 140 massima: 180")]
         [DataRow(33, "minima: 130 massima: 168")]
+        [DataRow(40, "minima: 126 massima: 162")]
+        [DataRow(18, "minima: 141 massima: 181")]
 
         public void TestMinMax(int età, string valoreAspettato)
         {
@@ -19,6 +21,9 @@ namespace DataCardio_Test
         [DataRow(60, "Normale")]
         [DataRow(40, "Bradicardia")]
         [DataRow(200, "Tachicardia")]
+        [DataRow(65, "Normale")]
+        [DataRow(50, "Bradicardia")]
+        [DataRow(110, "Tachicardia")]
         public void TestTipo(int battiti, string valoreAspettato)
         {
             string prova = DataCardio.FrequenzaCardiaca(battiti);
@@ -27,6 +32,8 @@ namespace DataCardio_Test
         [DataTestMethod]
         [DataRow("uomo", 20, 70, 20, 200, 425.66)]
         [DataRow("donna", 20, 67, 20, 200, 296.73)]
+        [DataRow("uomo", 30, 80, 30, 190, 621.98)]
+        [DataRow("donna", 30, 69, 25, 190, 347.11)]
         public void TestCalorieBruciate(string sesso, int età, double peso, double durata, double frequenza, double valoreAspettato)
         {
             double prova = DataCardio.CalorieBruciate(sesso, età, peso, durata, frequenza);
